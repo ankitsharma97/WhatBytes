@@ -1,0 +1,73 @@
+# WhatBytes Django Assignment
+
+This is a Django-based web application developed as part of the WhatBytes assignment. The project showcases essential features and functionalities that demonstrate the capabilities of Django as a web framework.
+
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
+
+
+## Features
+- User registration and authentication System
+- SQLite database for easy setup and testing
+
+## Prerequisites
+
+- Python 3.7+
+- Git
+- Virtualenv
+
+## Setup Instructions
+
+1. **Install Python:** [Download and install Python](https://www.python.org/downloads/).
+
+2. **Create a Virtual Environment:**
+
+    ```bash
+    python -m venv venv
+    ```
+
+    - On Windows:
+
+        ```bash
+        venv\Scripts\activate
+        ```
+
+    - On macOS/Linux:
+
+        ```bash
+        source venv/bin/activate
+        ```
+
+3. **Clone the Project:**
+
+
+    ```bash
+   git clone https://github.com/ankitsharma97/WebByte-Django-Assignment.git   
+    cd WebByte-Django-Assignment/Assignment
+    ```
+
+4. **Install Dependencies:**
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+
+    ```
+
+5. **Run the Server:**
+
+    ```bash
+    python manage.py makemigrations
+    ```
+    
+
+6. **Run the Server:**
+
+    ```bash
+    python manage.py runserver
+    ```
+

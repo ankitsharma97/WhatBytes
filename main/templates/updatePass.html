@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-7">
+            <div class="card">
+                <div class="card-header bg-primary text-white text-center">
+                    <h1 class="mb-0">Update Password</h1>
+                </div>
+
+                <div class="card-body">
+                    {% if messages %}
+                        {% for message in messages %}
+                            <div class="alert {{ message.tags }} alert-dismissible fade show" role="alert">
+                                {{ message }} hi 
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                    
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button type="submit" class="btn btn-primary">Change Password</button>
+                      </form>
+                      
+
+                    <a href="{% url 'forgotpassword' %}">Forgot Password?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
